@@ -121,5 +121,3 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-# 添加插件源：smpackage
-sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
